@@ -1,97 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<title>The Wondering Photographer</title>
-
-<!-- Link to CSS file -->
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"> <!-- Sets character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page responsive -->
+  <meta name="description" content="Travel photography blog selling high-quality photo prints."> <!-- Page description -->
+  <title>The Wondering Photographer</title>
+  <link rel="stylesheet" href="Style.css"> <!-- Links CSS file -->
 </head>
-
 <body>
 
-<!-- Decorative divider at the top -->
-<img src="TheDivider.png" class="divider" alt="decorative divider">
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<main>
+  <!-- Header section -->
+  <header class="site-header">
+    <div class="container">
 
-<!-- FIRST PHOTO -->
-<section class="photo-card">
+      <!-- Site title and basket icon -->
+      <div class="header-row">
+        <div>
+          <h1>The Wondering Photographer</h1>
+        </div>
 
-    <!-- Cart icon placed inside the photo container -->
-    <img src="shopping.svg" alt="shopping cart icon" class="cart">
+        <!-- Basket icon (top right) -->
+        <a class="basket-link" href="checkout.html" aria-label="Go to basket and checkout">
+          <img src="shopping.svg" alt="" class="basket-icon">
+          <span class="visually-hidden">View basket</span>
+        </a>
+      </div>
+      
+      <!-- Main navigation -->
+      <nav aria-label="Main navigation" class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About me</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    <!-- Photo -->
-    <img src="OceanPhoto.jpg" alt="Ocean view in Greenland">
+    <!-- Decorative divider image -->
+    <img src="TheDivider.png" alt="" class="devider">
+  </header>
 
-    <!-- Caption -->
-    <p>
-        This was from a fabulous trip to the cost of Greenland with my family.
-        The water was lovely - but very cold!
-    </p>
+  <!-- Main content -->
+  <main id="main-content" class="container">
 
-    <!-- Button -->
-    <button>Add to basket</button>
+    <!-- Photo gallery section -->
+    <section class="gallery" aria-label="Travel photography gallery">
 
-</section>
+      <!-- Photo item 1 -->
+      <article class="photo-item">
+        <img src="OceanPhoto.jpg" alt="People sitting on white coastal cliffs looking over calm blue sea in Greenland">
+        <div class="photo-text">
+          <h3>Greenland Coast</h3>
+          <p>
+            This was from a fabulous trip to the coast of Greenland with my family. The water was lovely, but very cold!
+          </p>
+          <button class="card-button" aria-label="Add Greenland coast print to basket">Add to basket</button>
+        </div>
+      </article>
 
+      <!-- Photo item 2 -->
+      <article class="photo-item">
+        <img src="BridgePhoto.jpg" alt="Low-angle photograph of the Golden Gate Bridge against a bright blue sky">
+        <div class="photo-text">
+          <h3>Golden Gate Bridge</h3>
+          <p>
+            A picture of the Golden Gate Bridge. New York! New York!
+          </p>
+          <button class="card-button" aria-label="Add Golden Gate Bridge print to basket">Add to basket</button>
+        </div>
+      </article>
 
-<!-- SECOND PHOTO -->
-<section class="photo-card">
+      <!-- Photo item 3 -->
+      <article class="photo-item">
+        <img src="ValleyPhoto.jpg" alt="Wide rocky valley and deep blue water in Greenland where a glacier used to be">
+        <div class="photo-text">
+          <h3>Glacier Valley</h3>
+          <p>
+            Another great photo from Greenland. It's a river valley where a glacier used to be.
+          </p>
+          <button class="card-button" aria-label="Add Greenland valley print to basket">Add to basket</button>
+        </div>
+      </article>
 
-<img src="BridgePhoto.jpg" alt="Golden Gate Bridge">
+      <!-- Photo item 4 -->
+      <article class="photo-item">
+        <img src="WaterfallPhoto.jpg" alt="Tall waterfall falling into a pool surrounded by mossy green rocks">
+        <div class="photo-text">
+          <h3>Waterfall</h3>
+          <p>
+            The waterfall made such a lovely sound. I could have fallen asleep!
+          </p>
+          <button class="card-button" aria-label="Add waterfall print to basket">Add to basket</button>
+        </div>
+      </article>
 
-<p>
-A picture of the Golden Gate Bridge. New York! New York!
-</p>
+    </section>
+  </main>
 
-<button>Add to basket</button>
-
-</section>
-
-
-<!-- THIRD PHOTO -->
-<section class="photo-card">
-
-<img src="ValleyPhoto.jpg" alt="River valley landscape">
-
-<p>
-Another great photo from Greenland. It's a river valley where a glacier used to be.
-</p>
-
-<button>Add to basket</button>
-
-</section>
-
-
-<!-- FOURTH PHOTO -->
-<section class="photo-card">
-
-<img src="WaterfallPhoto.jpg" alt="Waterfall in nature">
-
-<p>
-The waterfall made such a lovely sound. I could have fallen asleep!
-</p>
-
-<button>Add to basket</button>
-
-</section>
-
-</main>
-
-
-<footer>
-
-<p>Copyright The Wondering Photographer 2018.</p>
-
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">About me</a></li>
-</ul>
-
-</footer>
+  <!-- Footer section -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>Copyright The Wondering Photographer 2018.</p>
+    </div>
+  </footer>
 
 </body>
 </html>

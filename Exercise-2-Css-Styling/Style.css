@@ -1,0 +1,94 @@
+/* Reset all default spacing and sizing */
+* {
+    margin: 0; /* remove default margin */
+    padding: 0; /* remove default padding */
+    box-sizing: border-box; /* include padding & border in size */
+}
+
+/* Page background and font */
+body {
+    background-color: #c8c8c8; /* light grey background */
+    font-family: 'Montserrat', sans-serif; /* main font */
+}
+
+/* Main container card */
+.card {
+    width: 80%; /* take 80% of screen */
+    max-width: 1100px; /* limit max width */
+    margin: 60px auto; /* center with vertical space */
+    background: white; /* white background */
+    padding: 80px; /* inner spacing */
+    border-radius: 35px; /* rounded corners */
+}
+
+/* Main title (h1) */
+h1 {
+    font-family: 'Anton', sans-serif; /* bold title font */
+    font-size: 100px; /* very large text */
+    color: #3f8f12; /* green color */
+    text-align: center; /* center text */
+    margin-bottom: 30px; /* space below */
+}
+
+/* Section titles (h2) */
+h2 {
+    font-family: 'Anton', sans-serif; /* same title font */
+    font-size: 65px; /* large size */
+    color: #3f8f12; /* green color */
+    text-align: center; /* center text */
+    margin: 50px 0 30px 0; /* spacing top & bottom */
+}
+
+/* Paragraph text */
+p {
+    font-size: 22px; /* readable size */
+    line-height: 1.8; /* spacing between lines */
+    color: #222; /* dark grey text */
+    margin-bottom: 28px; /* space below */
+}
+
+/* Green highlight box */
+.green-box {
+    background-color: #3f8f12; /* green background */
+    padding: 50px; /* inner spacing */
+    border-radius: 35px; /* rounded corners */
+    margin-top: 50px; /* space above */
+}
+
+/* Title inside green box */
+.green-box h3 {
+    font-family: 'Anton', sans-serif; /* bold font */
+    font-size: 50px; /* large size */
+    color: white; /* white text */
+    margin-bottom: 20px; /* space below */
+}
+
+/* Text inside green box */
+.green-box p {
+    color: white; /* white text */
+    font-size: 22px; /* same paragraph size */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 900px) {
+    .card {
+        width: 90%; /* slightly wider on small screens */
+        padding: 40px; /* less padding */
+    }
+
+    h1 {
+        font-size: 65px; /* smaller title */
+    }
+
+    h2 {
+        font-size: 42px; /* smaller section title */
+    }
+
+    .green-box h3 {
+        font-size: 32px; /* smaller box title */
+    }
+
+    p {
+        font-size: 18px; /* smaller text */
+    }
+}

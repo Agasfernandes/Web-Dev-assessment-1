@@ -1,0 +1,79 @@
+/* Page background */
+body{
+background:#e85ca8; /* pink background */
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* Decorative divider at the top */
+.divider{
+display:block;
+width:40%; 
+margin:0 auto;
+
+}
+
+
+/* Main content container */
+main{
+width:520px; /* slightly wider like screenshot */
+margin:auto;
+}
+
+
+/* Photo container */
+.photo-card{
+position:relative; /* allows cart icon positioning */
+margin-bottom:25px; /* space between photos */
+}
+
+
+/* Photo images (NOT the cart icon) */
+.photo-card img:not(.cart){
+width:100%;
+display:block;
+}
+
+
+/* Caption box under images */
+.photo-card p{
+background:#efe9d4; /* beige caption background */
+color:#3ad5e3; /* bright cyan text like screenshot */
+font-weight:bold;
+padding:10px;
+margin:0;
+line-height:1.4; /* improves readability */
+}
+
+
+/* Add to basket button */
+button{
+margin:5px 0 20px 0; /* spacing like screenshot */
+padding:3px 8px;
+font-size:12px;
+}
+
+
+
+.cart{
+
+width: 10%;
+float: right;
+}
+
+
+/* Footer */
+footer{
+margin:30px 20px;
+}
+
+
+/* Footer links */
+footer ul{
+padding-left:20px;
+}
+
+footer a{
+color:blue;
+font-weight:bold;
+}

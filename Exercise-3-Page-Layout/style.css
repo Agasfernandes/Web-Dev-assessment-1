@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #d3d3d3;
+    color: black;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 0 0 20px 0;
+}
+
+nav a {
+    margin: 0 40px;
+    font-size: 22px;
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Top Section */
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 80px;
+}
+
+.text {
+    width: 55%;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.side-image {
+    width: 40%;
+    margin-top: 30px;
+
+    
+}
+
+.side-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+/* Gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 350px;
+    margin-top: 40px;
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* First video same height as others */
+.video {
+    grid-column: span 1;
+}
+
+/* Wide landscape image */
+.wide {
+    grid-column: span 1;
+}
